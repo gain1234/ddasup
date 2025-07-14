@@ -1,19 +1,22 @@
+{% set request = request %}
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <!-- Open Graph 메타태그 for social sharing -->
-<meta property="og:title" content="따숲 | DDASUP">
-<meta property="og:image" content="{{ url_for('static', filename='images/ddasup_logo_v2.jpeg', _external=True) }}">
-<meta property="og:url" content="{{ request.url }}">
-<meta name="twitter:card" content="summary_large_image">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title|default('불끄미 | DDASOOP') }}</title>
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="따숲 | DDASUP">
+  <meta property="og:image"
+        content="{{ url_for('static', filename='images/ddasup_logo_v1.jpeg', _external=True) }}">
+  <meta property="og:url" content="{{ request.url }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>따숲 | DDASOOP</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   {% block content %}{% endblock %}
-  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
