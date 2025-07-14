@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>따숲 | DDASOOP</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="container hero__content">
+           <h1 class="hero__title heading-green"><span>따숲</span><br>DDASUP</h1>
+            <p class="hero__subtitle text-green-soft" style="font-size: 1.1rem;">산불 예방을 위한 첫걸음, 불끄미<br><br><br></p>
+            <img src="{{ url_for('static', filename='images/ddasup_fire.jpg') }}" style="width:100%; max-width:400px; border-radius:0.5rem; margin-bottom:1rem;"><br>
+            <p class="hero__subtitle">우리의 삶을 위협하는 산불,<br><br>작은 불씨로부터 시작될 수 있다는 사실 알고 계신가요?<br><br>불끄미로 초기 불씨를 진압!</p><br><br>
+            <h3 class="card__title text-green-strong">이런 분들에게 필요해요!</h3>
+            <ul class="text-green-soft" style="margin-left:1rem; list-style:disc;">
+      <li>농가를 소각하시는 분</li>
+      <li>벌초 하시는 분</li>
+      <li>캠핑 중 불씨가 걱정이신 분</li>
+      <li>불씨 진압이 어렵고 힘드신 어르신</li>
+    </ul>
+    * 불끄미는 생분해성 소재를 사용하여 잔여물이 자연에 남지 않습니다.
+            
+        </div>
+    </header>
+
+   <section class="about-link" style="padding:4rem 0; background:#f3f1e8;">
+  <div class="container" style="text-align: left;">
+   <h2 class="heading-green" style="font-size:1.6rem; margin-bottom:2rem;">따숲의 기업가치</h2>
+    <p style="margin-bottom:1rem; font-size:1rem;">자연과 공존하는 안전 솔루션, 불끄미에 담긴 철학을 확인해 보세요.</p>
+    <a href="{{ url_for('about') }}" class="btn">기업가치 보기</a>
+  </div>
+</section>
+
+
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="heading-green" style="text-align:left; font-size:1.6rem; margin-bottom:1.5rem;">불끄미 제품 라인업</h2>
+            <div class="products__grid">
+                <article class="card">
+                    <div class="card__body">
+                        <h3 class="card__title text-green-soft">1. 불끄미 - 캡슐형</h3>
+                        <img src="{{ url_for('static', filename='images/ddasup_intro_v1.png') }}" style="width:100%; max-width:300px; border-radius:0.5rem; margin-bottom:1rem;">
+                        <p class="card__text">불씨 위에 던지면 젤이 퍼지며 자동 작동!<br>1회용 소화 캡슐로 누구나 쉽게 사용 가능.</p>
+                        <div class="card__price">₩3,000 / 한 상자 30개입</div><br>
+                        <a href="{{ url_for('product_capsule') }}" class="btn" style="margin-bottom: 2rem;">더보기</a><br><br><br>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__body">
+                        <h3 class="card__title text-green-soft">2. 불끄미 - 스틱형</h3>
+                        <img src="{{ url_for('static', filename='images/ddasup_intro_v2.png') }}" style="width:100%; max-width:300px; border-radius:0.5rem; margin-bottom:1rem;">
+                        <p class="card__text">지면 온도 상승을 감지해 먼저 알려주는 화재 알림 스틱.<br>재사용 가능하고 태양광 충전 지원!</p>
+                        <div class="card__price">₩8,000 / 한 상자 1개입</div><br>
+                        <a href="{{ url_for('product_stick') }}" class="btn">더보기</a><br><br>
+                        <p>&copy; 따숲</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="padding:4rem 0">
+  <div class="container">
+
+    <!-- 제목 : 진녹색 -->
+    <h2 class="text-green-strong" style="font-size:1.8rem; margin-bottom:1rem;">
+      2. 불끄미 – 스틱형
+    </h2>
+
+    <!-- 슬로건 : 연녹색 -->
+    <p class="text-green-soft" style="margin-bottom:2rem; font-size:1rem;">
+      "지면 온도를 감지해 먼저 알려주는 화재 알림 스틱"
+    </p>
+
+    <img src="{{ url_for('static', filename='images/ddasup_goods_v2.jpg') }}"
+         style="width:100%; max-width:400px; border-radius:0.5rem; margin-bottom:1rem;">
+
+    <!-- 특징 목록 : 연녹색 -->
+    <ul class="text-green-soft" style="margin-left:1rem; list-style:disc;">
+      <li>반복 사용 가능한 다회용 감지 장치</li>
+      <li>LED 점등으로 온도 이상 감지 시 시각적 경고</li>
+      <li>사용자가 모닥불 주변 온도 상승 실시간 확인 가능</li>
+      <li>태양광 또는 건전지 방식 충전 가능</li>
+      <li>학교·마을회관·야영장 등 고정 설치용으로 적합</li>
+      <li>교육용·체험 키트로도 활용 가능</li>
+
+      <!-- 버튼 줄은 목록 밖이 더 깔끔 -->
+    </ul>
+
+    <!-- 프로토타입 더보기 버튼 : 기본 색상(버튼 자체 디자인 유지) -->
+    <a href="{{ url_for('product_stick_prototype') }}" class="btn" style="margin-top:1rem;">프로토타입 더보기</a><br><br>
+
+    <!-- 가격 : 연녹색 -->
+    <p class="text-green-soft" style="margin:1.5rem 0 1rem; font-size:1rem;">
+      한 상자 1개입 / 8,000원
+    </p>
+
+    <a href="/" class="btn" style="margin-top:1rem;">메인으로</a><br><br>
+    <p>&copy; 따숲</p>
+  </div>
+</section>
+{% endblock %}

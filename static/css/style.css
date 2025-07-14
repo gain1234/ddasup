@@ -1,0 +1,64 @@
+:root {
+  --green-900: #0f5d3d;
+  --green-700: #157347;
+  --beige-100: #f3f1e8;
+  --text-dark: #1a1a1a;
+  --max-w: 1200px;
+  --font-kr: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  font-family: var(--font-kr);
+  background: var(--beige-100);
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--green-700);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.btn:hover {
+  background: #125d3d;
+}
+
+/* 강조용 진한 녹색 */
+.text-green-strong {
+  color: #0f5d3d;        /* 포스터에서 쓰던 진한 녹색 */
+  font-weight: 600;
+}
+
+/* 일반 설명용 연한 녹색 */
+.text-green-soft {
+  color: #4e7b66;        /* 앞 배경보다 살짝 짙은 파스텔톤 */
+}
+
+.text-green-strong {
+  color: #0f5d3d;  /* 진한 초록색 */
+  font-weight: 600;
+}
+
+/* 진녹색 제목용 */
+.heading-green {
+  color: #0f5d3d;   /* 브랜드 주요 녹색 */
+}

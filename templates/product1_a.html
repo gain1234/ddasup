@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="padding:2rem 0">
+  <div class="container">
+
+    <!-- 제목: 진녹색 -->
+    <h2 class="text-green-strong" style="font-size:1.8rem; margin-bottom:1rem;">
+      1. 불끄미 – 캡슐형
+    </h2>
+
+    <!-- 짧은 슬로건(연녹색) -->
+    <p class="text-green-soft" style="margin-bottom:2rem; font-size:1rem;">
+      "불씨 위에 놓기만 하면 자동 작동"
+    </p>
+
+    <img src="{{ url_for('static', filename='images/ddasup_goods_v1.png') }}"
+         style="width:100%; max-width:400px; border-radius:0.5rem; margin-bottom:1rem;">
+
+    <!-- 주요 특징: 연녹색 -->
+    <ul class="text-green-soft" style="margin-left:1rem; list-style:disc;">
+      <li>1회용 소화 캡슐</li>
+      <li>일정 온도 이상에서 터지며 작동</li>
+      <li>소화 분말과 젤이 빠르게 분사되어 불씨 진압</li>
+      <li>개당 3.5 cm로 사용 간편</li>
+      <li>캠핑·벌초·소각 후 방치된 불씨 진압에 효과적</li>
+      <li>생분해 소재 사용으로 자연에 무해</li>
+      <li>저렴한 가격</li>
+    </ul>
+
+    <p class="text-green-soft" style="margin-top:1rem; font-size:1rem;">
+      한 상자 30개입 / 3,000원
+    </p>
+
+    <a href="/" class="btn" style="margin-top:2rem;">메인으로</a><br><br>
+    <p>&copy; 따숲</p>
+  </div>
+</section>
+{% endblock %}

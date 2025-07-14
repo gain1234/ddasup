@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="padding:4rem 0">
+  <div class="container">
+   <h1 class="card__title text-green-strong" style="margin-bottom:1.5rem">불끄미 - 스틱형 프로토타입 회로도</h1>
+    <img src="{{ url_for('static', filename='images/ddasup_prototype.jpg') }}" alt="스틱형 내부 프로토타입" style="width:100%; max-width:400px; margin-bottom:2rem; border-radius:1rem;"><br>
+    <p class="card__text">시뮬레이션 링크: https://www.tinkercad.com/things/deb9RJIl9NA-?sharecode=nFAEXw5Lr7zRm36rTlZd5231O2F_HZVzZVrK9OFnBrI</p>
+    <a href="{{ url_for('product_stick') }}" class="btn" style="margin-top:2rem">스틱형 소개로 돌아가기</a><br><br>
+    <p>&copy; 따숲</p>
+  </div>
+</section>
+{% endblock %}
